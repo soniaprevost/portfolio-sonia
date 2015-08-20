@@ -11,24 +11,26 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150813114502) do
+ActiveRecord::Schema.define(version: 20150820163145) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+  enable_extension "hstore"
+  enable_extension "uuid-ossp"
 
-  create_table "jobs", force: :cascade do |t|
-    t.string   "title"
-    t.text     "resume"
-    t.string   "job_task"
+  create_table "experiences", force: :cascade do |t|
+    t.string   "job_title"
+    t.text     "job_content"
     t.date     "start_date"
     t.date     "end_date"
-    t.string   "technical_tag"
-    t.string   "job_tag"
-    t.string   "company"
-    t.text     "company_description"
-    t.datetime "created_at",          null: false
-    t.datetime "updated_at",          null: false
+    t.string   "company_name"
+    t.string   "company_link"
+    t.integer  "user_id"
+    t.datetime "created_at",   null: false
+    t.datetime "updated_at",   null: false
   end
+
+  add_index "experiences", ["user_id"], name: "index_experiences_on_user_id", using: :btree
 
   create_table "users", force: :cascade do |t|
     t.string   "email",                  default: "", null: false
@@ -48,4 +50,5 @@ ActiveRecord::Schema.define(version: 20150813114502) do
   add_index "users", ["email"], name: "index_users_on_email", unique: true, using: :btree
   add_index "users", ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true, using: :btree
 
+  add_foreign_key "experiences", "users"
 end

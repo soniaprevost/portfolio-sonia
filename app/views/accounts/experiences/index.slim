@@ -1,1 +1,23 @@
-h1 hello, world !
+- content_for :title, "Gérer les expériences"
+
+.container
+  .row
+    .col-xs-12
+      ul.list-inline
+        - @experiences.each do |experience|
+          li
+            p= experience.job_title
+            p= experience.job_content
+
+  .row
+    .col-xs-12
+      h1 Ajouter une expérience
+      = simple_form_for [:account, @experience] do |f|
+        = f.error_notification
+        = f.input :job_title
+        = f.input :job_content
+        = f.input :start_date
+        = f.input :end_date
+        = f.input :company_name
+        = f.input :company_link
+        = f.submit

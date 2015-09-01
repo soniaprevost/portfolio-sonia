@@ -5,7 +5,7 @@ Rails.application.routes.draw do
   resources :pages
 
   resource :account, only: [:show] do
-    resources :experiences, module: :accounts
+    resources :experiences, only: [:index, :create, :update, :destroy], module: :accounts
   end
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

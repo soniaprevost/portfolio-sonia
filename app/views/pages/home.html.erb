@@ -1,6 +1,8 @@
+<% content_for :title, 'Welcome on Sonia\'s wonderful portfolio' %>
+
 <div id="banner" class="text-center">
-  <h1>Sonia Prévost</h1>
-  <h3>Junior Ruby Developer</h3>
+  <h1><%= t '.name' %></h1>
+  <h3><%= t '.position' %></h3>
   <ul class="list-inline">
     <li><a href="mailto:info@info.com"><i class="fa fa-paper-plane"></i></a></li>
     <li><a href="https://github.com/soniaprevost"><i class="fa fa-github"></a></i></li>
@@ -8,9 +10,12 @@
     <li><a href="https://twitter.com/wondersonja"><i class="fa fa-twitter"></i></a></li>
   </ul>
 </div>
+
+<%= render 'presentation' %>
+
 <div class="container-fluid">
   <div class="row">
-    <div class="col-xs-12 text-center">
+    <div class="col-xs-12 text-center private">
       <%= link_to 'Private', account_path %>
     </div>
   </div>

@@ -21,3 +21,12 @@
 
 en:
   hello: "Hello world"
+  pages:
+    home:
+      name: Sonia Prévost
+      position: Junior Ruby Developer
+    presentation:
+      description: I love to solve problems. Put a problem in front of me and I’m up and running to tackle it. This is why after a couple of years asking my younger brother (a dev student @Epitech) to solve my coding problems for me,
+        I’ve decided to learn web development myself. I now know enough Ruby on Rails, Javascript, HTML5, CSS3 and other bits (like versioning with Git and Github) to manage and develop web apps.
+        You have a great product? Cool! I have a knack to make people believe in crazy ideas I love. Yes, I have a thing for federating people. This bit is quite useful when working in a heterogeneous team that needs cohesion. So let’s meet and have a chat about what you’re working on.
+        You want to know more about my other achievements? Read my bio below and find some experiences that rock in organizing things.

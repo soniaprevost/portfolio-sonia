@@ -5,5 +5,10 @@ fr:
       name: Sonia Prévost
       position: Développeuse Ruby on Rails Junior
     presentation:
-      whoami: Je suis...
-      description: Hey, I'm a cool girl
+      whoami: Bonjour, vous !
+      description: Après quelques années à demander aux autres de régler mes problèmes de code pour moi, j'ai décidé d'apprendre la programmation web avec Le Wagon. Je développe des applications web quotidiennement avec Ruby On Rails, Javascript, HTML5, CSS3 et autres (comme le versionnement avec Git et Github). C'est ce que je fais en ce moment chez Agorize où je gère et maintiens 20 apps.
+        <br><br>Vous avez un chouette produit ? Cool ! J'ai le super pouvoir de fédérer les gens autour des idées que j'aime. Et oui, c'est plutôt pratique quand il faut travailler avec les équipes marketing, business ou produit pour trouver la meilleure solution.
+        <br><br>Alors, rencontrons-nous et discutons-en...
+  shared:
+    footer:
+      madewithlove: Fait avec <3 par Sonia Prévost.

@@ -1,6 +1,8 @@
 .container
   .row
     .col-xs-12.col-sm-4.col-md-3
+      .title.padded
+        h1= t '.whoami'
     .col-xs-12.col-sm-8.col-md-9
-      .padded
-        h4= t '.description'
+      .title.padded
+        p= t('.description').html_safe

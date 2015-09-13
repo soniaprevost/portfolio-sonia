@@ -1,8 +1,10 @@
 <% content_for :title, 'Welcome on Sonia\'s wonderful portfolio' %>
 
 <div id="banner" class="text-center">
-  <h1><%= t '.name' %></h1>
-  <h3><%= t '.position' %></h3>
+  <h1><%= t('.name').html_safe %></h1>
+  <div class="expandUp">
+    <h3><%= t '.position' %></h3>
+  </div>
   <ul class="list-inline">
     <li><a href="mailto:info@info.com"><i class="fa fa-paper-plane"></i></a></li>
     <li><a href="https://github.com/soniaprevost"><i class="fa fa-github"></a></i></li>
